@@ -10,7 +10,7 @@
         "assets/family/_errorOverlay.scss",
         "assets/family/_familyCard.scss",
         "assets/family/_form.scss",
-        "mediaQueries/_zadanie2Responsivity.scss"
+        "mediaQueries/_familyResponsivity.scss"
     ],
     "names": [],
     "file": "style.css"

@@ -30,9 +30,10 @@ a{
 }
 
 .fa { font-family: 'FontAwesome' !important; } 
+
 @import './mixins';
 @import 'assets/family/main';
 
-@import './mediaQueries/zadanie2Responsivity';
+@import './mediaQueries/familyResponsivity';
 
 
