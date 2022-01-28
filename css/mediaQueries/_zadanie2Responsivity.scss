@@ -1,0 +1,89 @@
+@media( max-width: 76.875em){     //1230px
+  .familyContainer{
+    .myFamily{
+      width: 85%;
+    }
+  }
+}
+
+@media( max-width: 67.875em){     //1086px
+  .familyContainer{
+    .myFamily{
+      width: 95%;
+    }
+  }
+}
+
+@media( max-width: 61.25em){     //980px
+  .familyContainer{
+    font-size: 90%;
+    .familyForm{
+      width: 50%;
+    }
+    .myFamily{
+      width: 75%;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media(max-width: 48.75em){       //780px
+  .familyContainer{
+    .familyForm{
+      width: 65%;
+    }
+  }
+}
+
+@media( max-width: 39.375em){     //630px
+  .familyContainer{
+    .myFamily{
+      width: 90%;
+    }
+  }
+}
+
+@media( max-width: 32.5em){     //520px
+  .familyContainer{
+    .familyForm{
+      width: 80%;
+    }
+    .myFamily{
+      width: 65%;
+      grid-template-columns: 1fr;
+      .familyCard .familyImage{
+        max-width: 60%;
+      }
+    }
+    .echoOverlay{
+      font-size: 85%;
+    }
+  }
+}
+
+@media( max-width: 26.25em){     //420px
+  .familyContainer{
+    .familyForm{
+      width: 90%;
+
+    }
+    .myFamily{
+      .familyCard .familyImage{
+        width: 80%;
+      }
+    }
+    .echoOverlay{
+      h1{
+        font-size: 1.8em;
+      }
+    }
+  }
+}
+
+@media( max-width: 20em){     //320px
+  .familyContainer{
+    .myFamily{
+      width: 85%;
+    }
+  }
+}

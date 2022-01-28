@@ -1,0 +1,56 @@
+.familyMainBg{
+  background: #15242c;
+  padding: 4em 0;
+  min-width: 100%;
+}
+.familyContainer{
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @import './sortPannel';
+
+  @import './searchInput';
+  
+  @import './errorOverlay';
+
+  .myFamily{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    .emptyDatabase{
+      color: #fff;
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    @import './familyCard';
+    
+  }
+
+  .showInput{
+    @include buttonStyle();
+  }
+
+  .backToMain{
+    @include buttonStyle();
+  }
+
+  .overlay{
+    display: none;
+    width: 100%;
+    background: rgba(0,0,0, .5);
+    position: fixed;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @import './form';
+
+}

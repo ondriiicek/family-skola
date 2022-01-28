@@ -1,0 +1,25 @@
+.familyCard{
+  background: #415059;
+  border: 2px solid #000;
+  color: #fff;
+  padding: .5em;
+  border-radius: 5px;
+  text-align: center;
+  h3,p{
+    margin-bottom: .3em;
+  }
+  .familyImage{
+    max-width: 70%;
+    margin-bottom: 1em;
+  }
+
+  .buttonContainer {
+    text-align: right;
+    a{
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #8E7258;
+      padding-right: .2em;
+    }
+  }
+}

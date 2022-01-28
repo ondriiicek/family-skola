@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0 auto;
+  font-family: 'Nunito', sans-serif;
+  background: #15242c;
+}
+
+main{
+  h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2em;
+    font-weight: 400;
+  }
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+.fa { font-family: 'FontAwesome' !important; } 
+@import './mixins';
+@import 'assets/family/main';
+
+@import './mediaQueries/zadanie2Responsivity';
+
+

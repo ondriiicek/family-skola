@@ -1,0 +1,52 @@
+.familyForm{
+  width: 40%;
+  background: #fff;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 0 auto;
+  border: 2px solid #a1d9ce;
+  border-radius: 6px;
+  margin-top: 7em;
+  #male,
+  #female{
+    display: inline-block;
+    width: 5%;
+    margin-left: 3.5em;
+  }
+  
+  input{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 2.5px solid #a1d9ce;
+    margin-bottom: 1.1em;
+    margin-bottom: 1em;
+    padding: .5em;
+    outline: none;
+  }
+  button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 3em;
+    padding: .6em 1.2em;
+    background: none;
+    outline: none;
+    border: 2px dashed #c8cbe3;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #05d389;
+    font-weight: bold;
+    span{
+      font-size: 1.3em;
+      background: #05d389;
+      color: #fff;
+      border-radius: 50%;
+      padding: 0 .35em;
+      margin-right: .5em;
+    }
+  }
+  .disabledBtn{
+    opacity: .7;
+  }
+}

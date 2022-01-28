@@ -1,0 +1,15 @@
+.searchForm{
+  .searchBar{
+    @include searchStyles();
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: -5px;
+  }
+  .searchSubmit{
+    @include searchStyles();
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+  }
+}

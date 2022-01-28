@@ -1,0 +1,32 @@
+$background: #415059;
+
+@mixin buttonStyle {
+  font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 7px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    background: $background;
+    margin: {
+      top: 3em;
+    }
+    padding: {
+      top: .8em;
+      right: 1em;
+      bottom: .6em;
+      left: 1em;
+    }
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+@mixin searchStyles {
+  background: $background;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  padding: .4em .5em;
+  outline: none;
+  color: #fff;
+}

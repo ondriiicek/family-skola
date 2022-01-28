@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Nunito', sans-serif;
+  background: #15242c;
+}
+
+main {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+main h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+.fa {
+  font-family: 'FontAwesome' !important;
+}
+
+.familyMainBg {
+  background: #15242c;
+  padding: 4em 0;
+  min-width: 100%;
+}
+
+.familyContainer {
+  max-width: 1800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.familyContainer .sortingPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #415059;
+  margin-top: 4em;
+  margin-bottom: 1em;
+  padding: 0 1em;
+  border-radius: 5px;
+}
+
+.familyContainer .sortingPart a {
+  color: #fff;
+  font-size: 1.1em;
+  padding: .5em 0;
+}
+
+.familyContainer .sortingPart a:not(:last-child) {
+  padding-right: .6em;
+  border-right: 3px solid #fff;
+}
+
+.familyContainer .sortingPart a:not(:first-child) {
+  padding-left: .6em;
+}
+
+.familyContainer .sortingPart a:first-child {
+  border-right: 3px dashed #fff;
+}
+
+.familyContainer .searchForm .searchBar {
+  background: #415059;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  padding: .4em .5em;
+  outline: none;
+  color: #fff;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: -5px;
+}
+
+.familyContainer .searchForm .searchSubmit {
+  background: #415059;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  padding: .4em .5em;
+  outline: none;
+  color: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+
+.familyContainer .echoOverlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.familyContainer .echoOverlay a {
+  color: #fff;
+  background: #ff3333;
+  border-radius: 15px;
+  display: block;
+  padding-top: .5em;
+  padding-right: .7em;
+  padding-bottom: .5em;
+  padding-left: .7em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.familyContainer .echoOverlay .showInput {
+  margin-bottom: 1em;
+  margin-top: 2em;
+  background: #FF5733;
+  word-spacing: 0em;
+}
+
+.familyContainer .echoOverlay h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  margin-bottom: 0;
+}
+
+.familyContainer .myFamily {
+  width: 75%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.familyContainer .myFamily .emptyDatabase {
+  color: #fff;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.familyContainer .myFamily .familyCard {
+  background: #415059;
+  border: 2px solid #000;
+  color: #fff;
+  padding: .5em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.familyContainer .myFamily .familyCard h3, .familyContainer .myFamily .familyCard p {
+  margin-bottom: .3em;
+}
+
+.familyContainer .myFamily .familyCard .familyImage {
+  max-width: 70%;
+  margin-bottom: 1em;
+}
+
+.familyContainer .myFamily .familyCard .buttonContainer {
+  text-align: right;
+}
+
+.familyContainer .myFamily .familyCard .buttonContainer a {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #8E7258;
+  padding-right: .2em;
+}
+
+.familyContainer .showInput {
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  word-spacing: 7px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  background: #415059;
+  margin-top: 3em;
+  padding-top: .8em;
+  padding-right: 1em;
+  padding-bottom: .6em;
+  padding-left: 1em;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.familyContainer .backToMain {
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  word-spacing: 7px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  background: #415059;
+  margin-top: 3em;
+  padding-top: .8em;
+  padding-right: 1em;
+  padding-bottom: .6em;
+  padding-left: 1em;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.familyContainer .overlay {
+  display: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.familyContainer .familyForm {
+  width: 40%;
+  background: #fff;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 0 auto;
+  border: 2px solid #a1d9ce;
+  border-radius: 6px;
+  margin-top: 7em;
+}
+
+.familyContainer .familyForm #male,
+.familyContainer .familyForm #female {
+  display: inline-block;
+  width: 5%;
+  margin-left: 3.5em;
+}
+
+.familyContainer .familyForm input {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 2.5px solid #a1d9ce;
+  margin-bottom: 1.1em;
+  margin-bottom: 1em;
+  padding: .5em;
+  outline: none;
+}
+
+.familyContainer .familyForm button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 3em;
+  padding: .6em 1.2em;
+  background: none;
+  outline: none;
+  border: 2px dashed #c8cbe3;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #05d389;
+  font-weight: bold;
+}
+
+.familyContainer .familyForm button span {
+  font-size: 1.3em;
+  background: #05d389;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0 .35em;
+  margin-right: .5em;
+}
+
+.familyContainer .familyForm .disabledBtn {
+  opacity: .7;
+}
+
+@media (max-width: 76.875em) {
+  .familyContainer .myFamily {
+    width: 85%;
+  }
+}
+
+@media (max-width: 67.875em) {
+  .familyContainer .myFamily {
+    width: 95%;
+  }
+}
+
+@media (max-width: 61.25em) {
+  .familyContainer {
+    font-size: 90%;
+  }
+  .familyContainer .familyForm {
+    width: 50%;
+  }
+  .familyContainer .myFamily {
+    width: 75%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 48.75em) {
+  .familyContainer .familyForm {
+    width: 65%;
+  }
+}
+
+@media (max-width: 39.375em) {
+  .familyContainer .myFamily {
+    width: 90%;
+  }
+}
+
+@media (max-width: 32.5em) {
+  .familyContainer .familyForm {
+    width: 80%;
+  }
+  .familyContainer .myFamily {
+    width: 65%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .familyContainer .myFamily .familyCard .familyImage {
+    max-width: 60%;
+  }
+  .familyContainer .echoOverlay {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 26.25em) {
+  .familyContainer .familyForm {
+    width: 90%;
+  }
+  .familyContainer .myFamily .familyCard .familyImage {
+    width: 80%;
+  }
+  .familyContainer .echoOverlay h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 20em) {
+  .familyContainer .myFamily {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
