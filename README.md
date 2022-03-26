@@ -1,6 +1,6 @@
 # family-skola
 
-Táto webová aplikácia bola súčasťou školského zadania pre predmet webové technológie.
+Táto webová aplikácia bola súčasťou školského zadania pre predmet webové technológie. V zložke **description -> screenshots** možno nájsť screenshoty aplikácie.
 
 ### Použité technológie ###
  - HTML
